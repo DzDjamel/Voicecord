@@ -6,12 +6,12 @@ import requests
 import websocket
 from keep_alive import keep_alive
 
-status = "online" #online/dnd/idle
+status = "dnd" #online/dnd/idle
 
-GUILD_ID = ADD_YOUR_SERVER_ID_HERE
-CHANNEL_ID = ADD_YOUR_CHANNEL_ID_HERE
+GUILD_ID = 746857541979340900
+CHANNEL_ID = 1002688232410054776
 SELF_MUTE = True
-SELF_DEAF = False
+SELF_DEAF = True
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
